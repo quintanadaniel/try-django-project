@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<h1>About Daniel Quintana</h1>
+<h3>{{ title|capfirst }}</h3>
+<p>"{{ title|center:"50" }}"</p>
+<p>"{{ title|cut:" " }}"</p>
+<p>"{{ title|length }}"</p>
+<p>"{{ my_html|striptags }}"</p>
+<p>"{{ my_html|safe }}"</p>
+<p>"{{ my_html|striptags|slugify }}"</p>
+
+
+<p>This is a template</p>
+
+<p>
+    {{ my_text }},{{ my_number }}, {{ my_list }}
+</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+{% for my_sub_item in my_list %}
+    {% if my_sub_item != 'pelota' %}
+    <li>{{ forloop.counter }} - {{ my_sub_item }}</li>
+    {% endif %}
+{% endfor %}
+
+
+
+
+{% endblock content %}
+

@@ -1,0 +1,10 @@
+1. Create a new app named Blog -- python manage.py startapp blog
+2. Add 'Blog' to your django project -- in the settings.py trydjangoproject, in option Installed_App add new app Blog
+3. Create a model name Article -- In the app Blog models.py create a model Article
+4. Run Migrations -- python manage.py makemigrations and then python manage.py migrate
+5. Create a ModelForm for Article -- in the app create forms.py and into create a class AritcleForm(forms.ModelForm)
+6. Create 'article_list.html' & 'article_detail.html' Template -- in teh app blog, create folder templates, and into other folder articles and into two html
+7. Add Article Model to the Admin -- in the app blog, find admin.py, into import the model Article and registered the model Article
+8. Save a new Article object in the Admin -- We go http://localhost:8000/admin and into App Blog, find the model Article and into created a new register
+
+Confused? Start here http://kirr.co:/9ypik6
